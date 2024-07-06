@@ -1,0 +1,85 @@
+body {
+    background-image: url(../images/background/nyc.jpg);
+    background-size: 100%;
+
+
+}
+
+.clock {
+    position:relative;
+    
+    background-color:rgba(255, 0, 0, 0.222);
+    width:300px;
+    height:300px;
+   
+    border-radius:60%;
+   
+    filter:brightness(100%);
+    filter: invert(100%);
+    
+
+}
+
+.hourhand{
+    position: absolute;
+    top: 133px;
+    left:158.5px;
+    transform-origin: center left;
+    animation-name:hourmove;
+    animation-duration: 10s;
+    /* opacity: 50%; */
+    filter: invert(100%);
+    
+}
+
+.minutehand{
+    position: absolute;
+    top: 128.8px;
+    left:160px;
+    transform-origin: center left;
+    rotate:-90deg;
+    filter: invert(100%);
+    animation-name:minutemove;
+    animation-duration:10s;
+}
+
+@keyframes hourmove{
+    0%{transform: rotate(0deg);
+
+    }
+
+    100%{transform: rotate(30deg);}
+}
+
+@keyframes minutemove{
+    0%{transform: rotate(0deg);
+
+    }
+
+    100%{transform: rotate(360deg);}
+}
+
+.textbox{
+    position:absolute;
+    background-color:rgba(80, 80, 80, 0.375);
+    right:200px;
+    bottom:200px;
+    height:200px;
+    width: 600px;
+    text-align: center;
+    padding-top: 100px;
+    font-size:30px;
+    color:rgb(79, 226, 246);
+    text-shadow: 1px 1px black;
+
+
+}
+
+.clickhere{
+    position: absolute;
+    right:450px;
+    bottom:280px;
+    width:100px;
+    height: 30px;
+    
+}
