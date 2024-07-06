@@ -83,3 +83,13 @@ body {
     height: 30px;
     
 }
+
+.centerpiece {
+    position: absolute;
+    top: 150px;
+    left: 152px;
+    background-color: rgb(255, 255, 255);
+    height:15px;
+    width: 15px;
+    border-radius:50%;
+}
